@@ -16,20 +16,20 @@ Pi Network Quantum-Resistant Cryptography is a================ cryptographic pro
 
 # Installation
 
-Clone the repository:
+1. Clone the repository:
 
 ```bash
 
 1. git clone https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography.git
 ```
 
-Change the directory to the cloned repository:
+2. Change the directory to the cloned repository:
 
 ```bash
 
 1. cd pi-network-quantum-resistant-cryptography
 ```
-Install the required packages:
+3. Install the required packages:
 
 ```bash
 
@@ -40,7 +40,7 @@ Install the required packages:
 
 # Usage
 
-To create a new Pi Network Quantum-Resistant Cryptography instance:
+1. To create a new Pi Network Quantum-Resistant Cryptography instance:
 
 ```python
 
@@ -52,7 +52,7 @@ To create a new Pi Network Quantum-Resistant Cryptography instance:
 ```
 1. piqr = PIQR()
 ```
-To generate a key pair for a party in the network:
+2. To generate a key pair for a party in the network:
 
 ```python
 
@@ -60,7 +60,7 @@ To generate a key pair for a party in the network:
 2. public_key, private_key = piqr.generate_keys()
 ```
 
-To encrypt a message using the public key of a party:
+3. To encrypt a message using the public key of a party:
 
 ```python
 
@@ -68,14 +68,14 @@ To encrypt a message using the public key of a party:
 2. encrypted_message = piqr.encrypt(message, public_key)
 ```
 
-To decrypt a message using the private key of a party:
+4. To decrypt a message using the private key of a party:
 
 ```python
 
 1.# Decrypt a message using the private key of a party
 2. decrypted_message = piqr.decrypt(encrypted_message, private_key)
 ```
-To perform a key exchange between two parties in the network:
+5. To perform a key exchange between two parties in the network:
 
 ```python
 
@@ -83,13 +83,13 @@ To perform a key exchange between two parties in the network:
 2. shared_key = piqr.key_exchange(public_key_1, private_key_2)
 ```
 
-To create a new Pi Network Quantum-Resistant Cryptography instance with custom parameters:
+6. To create a new Pi Network Quantum-Resistant Cryptography instance with custom parameters:
 
 ```
 1. # Create a new Pi Network Quantum-Resistant Cryptography instance with custom parameters
 2. piqr_custom = PIQR(custom_parameters)
 ```
-To run tests for the Pi Network Quantum-Resistant Cryptography implementation:
+7. To run tests for the Pi Network Quantum-Resistant Cryptography implementation:
 
 ```bash
 
