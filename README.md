@@ -8,7 +8,7 @@
 
 # pi-network-quantum-resistant-cryptography
 
-A library for quantum-resistant cryptography in the Pi Network, built using NIST PQC candidates and Pi SDK. 
+A library for quantum-resistant cryptography in the Pi Network, built using NIST PQC candidates and Pi SDK.
 
 # Pi Network Quantum-Resistant Cryptography
 
@@ -37,6 +37,7 @@ Pi Network Quantum-Resistant Cryptography is a================ cryptographic pro
 
 1. cd pi-network-quantum-resistant-cryptography
 ```
+
 3. Install the required packages:
 
 ```bash
@@ -60,6 +61,7 @@ Pi Network Quantum-Resistant Cryptography is a================ cryptographic pro
 ```
 1. piqr = PIQR()
 ```
+
 2. To generate a key pair for a party in the network:
 
 ```python
@@ -83,6 +85,7 @@ Pi Network Quantum-Resistant Cryptography is a================ cryptographic pro
 1.# Decrypt a message using the private key of a party
 2. decrypted_message = piqr.decrypt(encrypted_message, private_key)
 ```
+
 5. To perform a key exchange between two parties in the network:
 
 ```python
@@ -97,6 +100,7 @@ Pi Network Quantum-Resistant Cryptography is a================ cryptographic pro
 1. # Create a new Pi Network Quantum-Resistant Cryptography instance with custom parameters
 2. piqr_custom = PIQR(custom_parameters)
 ```
+
 7. To run tests for the Pi Network Quantum-Resistant Cryptography implementation:
 
 ```bash
