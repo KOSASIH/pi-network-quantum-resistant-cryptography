@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/codeql.yml)
+
 # pi-network-quantum-resistant-cryptography
 
 A library for quantum-resistant cryptography in the Pi Network, built using NIST PQC candidates and Pi SDK. 
