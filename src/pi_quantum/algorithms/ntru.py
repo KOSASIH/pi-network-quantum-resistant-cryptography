@@ -1,6 +1,8 @@
-from Crypto.Util.number import getPrime
-from Crypto.Cipher import AES
 from os import urandom
+
+from Crypto.Cipher import AES
+from Crypto.Util.number import getPrime
+
 
 class NTRU:
     def __init__(self, p=65537, q=3329, d=3):
@@ -72,8 +74,8 @@ class NTRU:
         """
         Encodes a message using AES.
         """
-        key = urandom.randint(0, 2 ** 128)
-        cipher = AES.new(key.to_bytes(16, 'big'), AES.ENCRYPT)
+        key = urandom.randint(0, 2**128)
+        cipher = AES.new(key.to_bytes(16, "big"), AES.ENCRYPT)
         return [(cipher.encrypt(message.encode()))]
 
     @staticmethod
@@ -81,8 +83,8 @@ class NTRU:
         """
         Decodes a message using AES.
         """
-        key = urandom.randint(0, 2 ** 128)
-        cipher = AES.new(key.to_bytes(16, 'big'), AES.DECRYPT)
+        key = urandom.randint(0, 2**128)
+        cipher = AES.new(key.to_bytes(16, "big"), AES.DECRYPT)
         return cipher.decrypt(ciphertext[0]).decode()
 
     @staticmethod
