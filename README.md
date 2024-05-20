@@ -1,3 +1,4 @@
+![Static Badge](https://img.shields.io/badge/PiQuantum-gold)
 [![CodeQL](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/codeql.yml/badge.svg)](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/codeql.yml)
 [![Mark stale issues and pull requests](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/pi-network-quantum-resistant-cryptography/actions/workflows/stale.yml)
 
