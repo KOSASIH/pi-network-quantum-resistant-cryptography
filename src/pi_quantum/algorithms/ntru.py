@@ -24,13 +24,15 @@ class NTRU:
         coefficients[d] = 1
         return coefficients
 
-    def invmod(self, a, b):
+    @staticmethod
+    def invmod(a, b):
         """
         Computes the inverse of a modulo b.
         """
         return pow(a, b - 2, b)
 
-    def multmod(self, a, b, m):
+    @staticmethod
+    def multmod(a, b, m):
         """
         Computes the product of a and b modulo m.
         """
@@ -65,7 +67,8 @@ class NTRU:
         m_prime = self.multmod(m_prime, self.df, self.n)
         return self.decode_message(m_prime)
 
-    def encode_message(self, message):
+    @staticmethod
+    def encode_message(message):
         """
         Encodes a message using AES.
         """
@@ -73,7 +76,8 @@ class NTRU:
         cipher = AES.new(key.to_bytes(16, 'big'), AES.ENCRYPT)
         return [(cipher.encrypt(message.encode()))]
 
-    def decode_message(self, ciphertext):
+    @staticmethod
+    def decode_message(ciphertext):
         """
         Decodes a message using AES.
         """
@@ -81,7 +85,8 @@ class NTRU:
         cipher = AES.new(key.to_bytes(16, 'big'), AES.DECRYPT)
         return cipher.decrypt(ciphertext[0]).decode()
 
-    def addmod(self, a, b, m):
+    @staticmethod
+    def addmod(a, b, m):
         """
         Adds two numbers modulo m.
         """
